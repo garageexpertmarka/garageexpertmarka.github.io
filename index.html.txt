@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Garage Expert Marka – Service Auto Premium</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Garage Expert Marka – service auto premium BMW & multimarcă. Mecanică, electrică, diagnoză, tinichigerie, vopsitorie și daune auto în Popești-Leordeni.">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f3f4f6;
+            color: #111827;
+        }
+        header {
+            background: #020617;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        nav {
+            margin-top: 15px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            padding: 45px 25px;
+            max-width: 1100px;
+            margin: auto;
+            background: white;
+            margin-top: 25px;
+            border-radius: 8px;
+        }
+        h2 {
+            color: #991b1b;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+        .hero-btn {
+            display: inline-block;
+            margin-top: 20px;
+            background: #991b1b;
+            color: white;
+            padding: 14px 28px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #991b1b;
+        }
+        footer {
+            background: #020617;
+            color: white;
+            text-align: center;
+            padding: 22px;
+            margin-top: 35px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>GARAGE EXPERT MARKA</h1>
+    <p>Service auto premium • BMW & Multimarcă • Daune auto</p>
+    <nav>
+        <a href="#servicii">Servicii</a>
+        <a href="#despre">Despre noi</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <a class="hero-btn" href="tel:0733929026">Sună acum</a>
+</header>
+
+<section id="servicii">
+    <h2>Serviciile noastre</h2>
+    <ul>
+        <li><span class="highlight">Specializare BMW</sp
