@@ -7,10 +7,14 @@
     <meta name="description" content="Garage Expert Marka – service auto premium BMW & multimarcă. Mecanică, electrică, diagnoză, tinichigerie, vopsitorie și daune auto în Popești-Leordeni.">
     <style>
         :root {
-            --primary: #020617; /* negru premium */
+            --primary: #6b7280; /* gri header */
             --accent: #991b1b;  /* roșu închis */
             --light: #f3f4f6;   /* gri deschis */
             --text: #111827;    /* text principal */
+        }
+
+        * {
+            box-sizing: border-box;
         }
 
         body {
@@ -20,20 +24,34 @@
             color: var(--text);
         }
 
+        /* Header gri cu logo-uri laterale */
         header {
             background: var(--primary);
             color: white;
-            padding: 40px 20px;
+            padding: 20px;
             text-align: center;
         }
 
-        .logo {
-            max-width: 140px;
-            margin-bottom: 15px;
+        .header-logos {
+            display: flex;
+            justify-content: space-between; /* logo stânga și dreapta */
+            align-items: center;
+            margin-bottom: 20px;
         }
 
-        nav {
-            margin-top: 15px;
+        .logo-side {
+            max-width: 100px;
+            height: auto;
+        }
+
+        .header-text h1 {
+            margin: 0;
+            font-size: 32px;
+        }
+
+        .header-text p {
+            margin: 5px 0 15px 0;
+            font-size: 16px;
         }
 
         nav a {
@@ -50,12 +68,22 @@
             background: var(--accent);
         }
 
+        .hero-btn {
+            display: inline-block;
+            margin-top: 15px;
+            background: var(--accent);
+            color: white;
+            padding: 14px 28px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+
         section {
             padding: 45px 25px;
             max-width: 1100px;
-            margin: auto;
+            margin: 25px auto;
             background: white;
-            margin-top: 25px;
             border-radius: 8px;
         }
 
@@ -65,17 +93,6 @@
 
         ul li {
             margin-bottom: 10px;
-        }
-
-        .hero-btn {
-            display: inline-block;
-            margin-top: 20px;
-            background: var(--accent);
-            color: white;
-            padding: 14px 28px;
-            text-decoration: none;
-            border-radius: 6px;
-            font-size: 16px;
         }
 
         .highlight {
@@ -94,21 +111,27 @@
         iframe {
             border-radius: 8px;
         }
+
     </style>
 </head>
 <body>
 
 <header>
-    <img src="assets/logo.png" alt="Garage Expert Marka Logo" class="logo">
-    <h1>GARAGE EXPERT MARKA</h1>
-    <p>Service auto premium • BMW & Multimarcă • Daune auto</p>
-    <nav>
-        <a href="#servicii">Servicii</a>
-        <a href="#despre">Despre</a>
-        <a href="#contact">Contact</a>
-        <a href="#locatie">Locație</a>
-    </nav>
-    <a class="hero-btn" href="tel:0733929026">Sună acum</a>
+    <div class="header-logos">
+        <img src="assets/logo-left.png" alt="Logo stânga" class="logo-side">
+        <img src="assets/logo-right.png" alt="Logo dreapta" class="logo-side">
+    </div>
+    <div class="header-text">
+        <h1>GARAGE EXPERT MARKA</h1>
+        <p>Service auto premium • BMW & Multimarcă • Daune auto</p>
+        <nav>
+            <a href="#servicii">Servicii</a>
+            <a href="#despre">Despre</a>
+            <a href="#contact">Contact</a>
+            <a href="#locatie">Locație</a>
+        </nav>
+        <a class="hero-btn" href="tel:0733929026">Sună acum</a>
+    </div>
 </header>
 
 <section id="servicii">
@@ -119,11 +142,9 @@
         <li><span class="highlight">Tinichigerie și vopsitorie</span>: Reparații caroserie.</li>
         <li><span class="highlight">Întreținere și revizii</span>: Service complet pentru autoturisme.</li>
         <li><span class="highlight">Diagnostice auto</span>: Teste avansate pentru probleme tehnice.</li>
-        <li><span class="highlight">Administrare flota auto</span>: Planificarea si organizarea intretinerii.</li>
-        <li><span class="highlight">Constatari Daune</span>: Asistenta in caz de accident.</span>: MASINA INLOCUIRE.</li>
-        <li><span class="highlight">Servicii Tractare</span>: Inchirieri Auto.</li>
-
-
+        <li><span class="highlight">Administrare flota auto</span>: Planificarea și organizarea întreținerii.</li>
+        <li><span class="highlight">Constatari Daune</span>: Asistență în caz de accident, inclusiv mașină de înlocuire.</li>
+        <li><span class="highlight">Servicii Tractare</span>: Închirieri auto.</li>
     </ul>
 </section>
 
@@ -134,7 +155,7 @@
 
 <section id="contact">
     <h2>Contact</h2>
-    <p><span class="highlight">Adresă:</span> Popești-Leordeni, Soseaua Oltenitei 213, Ilfov</p>
+    <p><span class="highlight">Adresă:</span> Popești-Leordeni, Soseaua Oltenitei, Nr. 213, Ilfov</p>
     <p><span class="highlight">Telefon:</span> <a href="tel:0733929026">0733 929 026</a></p>
     <p><span class="highlight">Program:</span> Luni – Vineri: 08:00 – 17:00</p>
     <p>Pentru programări rapide, sună-ne sau vino direct la service.</p>
@@ -142,7 +163,7 @@
 
 <section id="locatie">
     <h2>Locația noastră</h2>
-    <p>Ne găsești în <strong>Popești-Leordeni, Soseaua Oltenitei 213, Ilfov</strong></p>
+    <p>Ne găsești în <strong>Popești-Leordeni, Soseaua Oltenitei, Nr. 213, Ilfov</strong></p>
     <iframe 
         src="https://www.google.com/maps?q=Popesti-Leordeni&output=embed"
         width="100%" height="350" allowfullscreen="" loading="lazy">
